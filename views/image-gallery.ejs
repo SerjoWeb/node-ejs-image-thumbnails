@@ -1,0 +1,17 @@
+<div class="image-gallery">
+  <div class="main-image">
+    <img src="<%= images[0] %>" alt="image" id="main-image" />
+  </div>
+
+  <div class="thumbnails">
+    <% for (let i = 0; i < images.length; i++) { %>
+      <% if (i === 0) { %>
+        <div class="thumbnail active">
+      <% } else { %>
+        <div class="thumbnail">
+      <% } %>
+          <img src="<%= images[i] %>" alt="image" />
+        </div>
+    <% }; %>
+  </div>
+</div>
